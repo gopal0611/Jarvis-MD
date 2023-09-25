@@ -1,5 +1,5 @@
-const { command} = require("../lib/");
-command(
+const { system } = require("../lib/");
+system(
   {
     pattern: "ping",
     fromMe: false,
