@@ -1,0 +1,149 @@
+{
+  "name": "Jarvis-MD",
+  "description": "Whatsapp bot.",
+  "keywords": ["whatsapp bot"],
+  "repository": "https://github.com/IRONMAN444FF/Jarvis-MD",
+  "stack": "container",
+  "env": {
+    "SESSION_ID": {
+      "description": "your session id",
+      "required": true,
+      "value": " "
+    },
+    "SUDO": {
+      "description": "sudo numbers",
+      "required": true,
+      "value": "41782221168"
+    },
+    "MODE": {
+      "description": "bot mode private or public",
+      "required": true,
+      "value": "private"
+    },
+    "LOG_MSG": {
+      "description": "whatsapp msg in log",
+      "required": false,
+      "value": "true"
+    },
+    "PREFIX": {
+      "description": "bot prefix",
+      "required": true,
+      "value": "."
+    },
+    "BOT_INFO": {
+      "description": "botname;ownername;ownernumber;image url",
+      "required": true,
+      "value": "Jarvis;Loki;972528277755;https://i.imgur.com/pbNNWfM.jpeg"
+    },
+    "STICKER_DATA": {
+      "description": "sticker package name",
+      "required": true,
+      "value": "Jarvis"
+    },
+    "AUDIO_DATA": {
+      "description": "audio package name",
+      "required": true,
+      "value": "Jarvis;Loki;https://i.imgur.com/pbNNWfM.jpeg"
+    },
+    "READ_MSG": {
+      "description": "Read all messages",
+      "required": false,
+      "value": "false"
+    },
+    "AUTO_STATUS_VIEW": {
+      "description": "automatic read status",
+      "required": false,
+      "value": "false"
+    },
+    "REJECT_CALL": {
+      "description": "automatic reject call",
+      "required": false,
+      "value": "false"
+    },
+    "WARN": {
+      "description": "warn count",
+      "required": false,
+      "value": "4"
+    },
+    "SONG_THUMBNAIL": {
+      "description": "show youtube video thumbnail in song cmd",
+      "required": false,
+      "value": "false"
+    },
+    "ERROR_MESSAGE": {
+      "description": "get error alert",
+      "required": false,
+      "value": "true"
+    },
+    "ANTILINK": {
+      "description": "antilink on or off",
+      "required": false,
+      "value": "false"
+    },
+    "LOGS": {
+      "description": "whatsapp msg in log",
+      "required": false,
+      "value": "true"
+    },
+    "ANTILINK_ACTION": {
+      "description": "antilink action",
+      "required": false,
+      "value": "kick"
+    },
+    "LANG": {
+      "description": "language",
+      "required": false,
+      "value": "EN"
+    },
+    "HANDLERS": {
+      "description": "bot prefix",
+      "required": true,
+      "value": "."
+    },
+    "RMBG_KEY": {
+      "description": "remove bg key",
+      "required": false,
+      "value": "false"
+    },
+    "PACKNAME": {
+      "description": "sticker package name",
+      "required": true,
+      "value": "Jarvis"
+    },
+    "WELCOME_MSG": {
+      "description": "welcome msg",
+      "required": false,
+      "value": "Hi @user Welcome to @gname"
+    },
+    "GOODBYE_MSG": {
+      "description": "goodbye msg",
+      "required": false,
+      "value": "Hi @user It was Nice Seeing you"
+    },
+    "AUTHOR": {
+      "description": "sticker author name",
+      "required": true,
+      "value": "IronMan"
+    },
+    "OWNER_NAME": {
+      "description": "bot owner name",
+      "required": true,
+      "value": "Loki"
+    },
+    "BOT_NAME": {
+      "description": "bot name",
+      "required": true,
+      "value": "Jarvis"
+    },
+    "WORK_TYPE": {
+      "description": "bot mode private or public",
+      "required": true,
+      "value": "private"
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql"
+    }
+  ]
+}
