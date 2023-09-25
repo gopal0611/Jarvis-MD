@@ -1,10 +1,10 @@
-const { command } = require("../lib");
+const { system } = require("../lib");
 const got = require("got");
 const fs = require("fs");
 const { PluginDB, installPlugin } = require("../assets/database").Plugins;
-command(
+system(
   {
-    pattern: "install",
+    pattern: "plugin",
     fromMe: true,
     desc: "Installs External plugins",
     type: "user",
@@ -50,8 +50,8 @@ command(
 
 
 
-command(
-  { pattern: "plugin", fromMe: true, desc: "plugin list", type: "user" },
+system(
+  { pattern: "listp", fromMe: true, desc: "plugin list", type: "user" },
   async (message, match) => {
     var mesaj = "";
     var plugins = await PluginDB.findAll();
@@ -73,7 +73,7 @@ command(
 
 
 
-command(
+system(
   {
     pattern: "remove(?: |$)(.*)",
     fromMe: true,
